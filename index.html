@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin: 0px;
+            padding: 0px;
+            background:white;
+            color: black;
+        }
+
+        #title {
+            color: black;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+
+        }
+
+        #description {
+            text-align: center;
+        }
+
+        #text {
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            color: black;
+            padding: 15px;
+        }
+
+        #survey-form {
+            text-align: center;
+        }
+
+        .row-tab {
+            display: block;
+            padding-bottom: 20px;
+
+        }
+
+        .label-tab {
+            display: inline-block;
+            width: 44%;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        .input-tab {
+            display: inline-block;
+            width: 54%;
+            text-align: left;
+        }
+
+        .select-tab {
+            display: inline-block;
+            width: 54%;
+            text-align: left;
+        }
+        #select-box{
+            padding: 5px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="title">
+        <h1> Survey Form</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <div id="description">
+                <p> Let us know how we can improve freeCodeCamp</p>
+            </div>
+            <Form id="Survey-form">
+                <div class="row-tab">
+                    <div class="label-tab">
+                        <label> Name:</label>
+
+                    </div>
+                    <div class="input-tab">
+                        <input type="text" name="Name" placeholder="Enter your name">
+
+                    </div>
+                </div>
+                <div class="row-tab">
+                    <div class="label-tab">
+                        <label> Email:</label>
+
+                    </div>
+                    <div class="input-tab">
+                        <input type="email" name="Email" placeholder="Enter your email">
+
+                    </div>
+                </div>
+
+                <div class="row-tab">
+                    <div class="label-tab">
+                        <label> Age:</label>
+
+                    </div>
+                    <div class="input-tab">
+                        <input type="number" name="Age" placeholder="Age">
+                    </div>
+                </div>
+                <div class="row-tab">
+                    <div class="label-tab">
+                        <label>Which option best describes your current role?
+                        </label>
+                    </div>
+                    <div class="select-tab">
+                        <select>
+                            <option>Student</option>
+                            <Option>job holder</Option>
+                            <option>Businessman</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row-tab">
+                    <div class="label-tab">
+                        <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    </div>
+                    <div class="input-tab">
+                        <div>
+                        <input type="radio" name="suggest" value="Definitely"><label> Definitely</label></div>
+                        <div>
+                        <input type="radio" name="suggest"><label>Maybe</label></div>
+                        <div>
+                        <input type="radio" name="suggest"><label> Not sure</label></div>
+                </div>
+        </div>
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>
+                    what do you like most in FCC
+                </label>
+            </div>
+            <div class="select-tab">
+                <select class="select-box">
+                    <option>Select an option</option>
+                    <option>option-1</option>
+                    <option>option-2</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>things that should be improved in the future ( Check all that apply)</label>
+            </div>
+            <div class="input-tab">
+                <div> 
+                <input type="radio" name="Project" value="Font-end Project"><label>Font-end Project</label></div>
+                <div>
+                <input type="radio" name="Project" value="Back-end Project"><label>Back-end Project</label></div>
+                <div>
+                <input type="radio" name="Project" value="Data visulization"><label>Data visulization</label></div>
+
+            </div>
+        </div>
+        </Form>
+        </div>
+    </section>
+</body>
+
+</html>
